@@ -4,7 +4,30 @@ A local chatbot that answers compliance questions from your own PDFs and cites t
 
 - [SETUP.md](SETUP.md) — install, PDFs, the index, and how to run the chat
 - [ARCHITECTURE.md](ARCHITECTURE.md) — what was built, and how a question becomes a cited answer
-- [docs/screenshots](docs/screenshots/README.md) — three sample answers from the chat
+
+## How to use it
+
+Start the chat, pick a country, and ask a compliance question. The answer is taken from the loaded documents, and each claim names the page it came from. Open a source to see that page.
+
+```bash
+streamlit run app.py
+```
+
+In the sidebar, set **Country or region**. Choose **US** for Regulation Z. **Any** searches every loaded document. **UK** hides the US handbook, so a US rule comes back as "Not found in the documents". Leave **Careful search** on. It matches the meaning of the question and the exact words, then re-reads the best pages.
+
+These three questions were asked with the country set to US.
+
+A first late fee is capped at $25, and a repeat fee at $35. The fee also cannot exceed the missed amount. The source is `til.pdf`, page 78.
+
+![Late-fee cap: $25 for a first fee and $35 for a repeat, cited to til.pdf page 78](docs/screenshots/late-fee-cap.png)
+
+A $25 minimum payment is the stricter limit, so the maximum late fee is $25 even when the repeat safe harbor is $35. Sources: `til.pdf` pages 78 and 179.
+
+![Maximum late fee is $25 because it cannot exceed the $25 minimum payment](docs/screenshots/minimum-payment-late-fee.png)
+
+A due date on Saturday, with the statement delivered only 18 days before, cannot be treated as late. The payment received the next business day is timely. Sources: `til.pdf` pages 11, 141, and 175.
+
+![A Saturday due date and an 18-day statement cannot be treated as late](docs/screenshots/weekend-payment.png)
 
 This README walks through the pipeline in the order the code runs. Each stage has one job. The next stage only sees the previous stage's output.
 
