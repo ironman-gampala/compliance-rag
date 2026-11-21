@@ -4,6 +4,7 @@ A local chatbot that answers compliance questions from your own PDFs and cites t
 
 - [SETUP.md](SETUP.md) — install, PDFs, the index, and how to run the chat
 - [ARCHITECTURE.md](ARCHITECTURE.md) — what was built, and how a question becomes a cited answer
+- [docs/screenshots](docs/screenshots/README.md) — three sample answers from the chat
 
 This README walks through the pipeline in the order the code runs. Each stage has one job. The next stage only sees the previous stage's output.
 
