@@ -1,0 +1,32 @@
+{
+  "til.pdf": {
+    "region": "US",
+    "doc_type": "regulation",
+    "title": "Regulation Z (Truth in Lending)"
+  },
+  "credit-card-pub-l-111-24_0.pdf": {
+    "region": "US",
+    "doc_type": "statute",
+    "title": "Credit CARD Act of 2009"
+  },
+  "pub-ch-credit-card.pdf": {
+    "region": "US",
+    "doc_type": "handbook",
+    "title": "OCC Comptroller's Handbook: Credit Card Lending"
+  },
+  "PCI_Compliance_Guidance_091720.pdf": {
+    "region": "US",
+    "doc_type": "guidance",
+    "title": "University of Maryland PCI compliance guidance"
+  },
+  "CONC.pdf": {
+    "region": "UK",
+    "doc_type": "handbook",
+    "title": "FCA CONC Consumer Credit sourcebook"
+  },
+  "12-1264-consumer-credit-directive-guidance.pdf": {
+    "region": "UK",
+    "doc_type": "guidance",
+    "title": "UK guidance on the Consumer Credit Directive regulations"
+  }
+}
