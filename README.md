@@ -143,7 +143,7 @@ One question asks for the US late-fee cap while the region filter is `UK`. Retri
 streamlit run app.py
 ```
 
-The sidebar sets the region, the document type, and whether hybrid search plus the reranker are on. The answer is followed by a citation. Open it to see that PDF page rendered from the file in `docs/`. "Chunks the model was given" shows the five passages, including ones the answer did not cite, so you can see when the model ignored a chunk.
+The sidebar sets the country, the kind of document, and whether careful search is on. Careful search is hybrid search plus the reranker. The answer is followed by a citation. Open it to see that PDF page rendered from the file in `docs/`. "Passages the answer was based on" shows every passage the model was given, including ones the answer did not cite.
 
 The UI reads `LLM_PROVIDER` from `.env`. A missing key is shown as an error in the chat rather than a guessed answer, and the pages search found are still listed so you can open them. Hybrid search can hand the model more than five chunks when a fuller subsection has to come along. See [ARCHITECTURE.md](ARCHITECTURE.md).
 
