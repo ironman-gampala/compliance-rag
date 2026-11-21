@@ -1,0 +1,4 @@
+[client]
+# Hide Streamlit's own Deploy, Rerun, and Clear cache controls.
+# Those are for the person running the app, not for someone asking a question.
+toolbarMode = "viewer"

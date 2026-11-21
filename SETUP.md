@@ -59,7 +59,7 @@ python query.py "..." --retrieve-only
 streamlit run app.py
 ```
 
-The chat is at http://localhost:8501. In the sidebar, set **Region** to **US** or **Any** for the Regulation Z handbook. **UK** hides that file, so a US rule comes back as "Not found in the documents". Leave **Hybrid search and reranker** on. The first reranked question downloads `BAAI/bge-reranker-base`.
+The chat is at http://localhost:8501. In the sidebar, set **Region** to **US** or **Any** for the Regulation Z handbook. **UK** hides that file, so a US rule comes back as "Not found in the documents". Leave **Careful search** on. The first careful search downloads `BAAI/bge-reranker-base`.
 
 ## Check the index
 
